@@ -1,0 +1,139 @@
+@font-face {
+  font-family: BebasNeue;
+  src:url('../fonts');
+  src:url('../fonts/BebasNeue.woff') format('woff'),
+    url('../fonts/BebasNeue.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+.banner-wrp {
+	min-height: 800px;
+	background-color: #fff;
+	padding-top: 50px;
+	font-family: Raleway;
+}
+.banner {
+	position: relative;
+		.img-wrp {
+			position: absolute;
+			top: -45px;
+			right: -312px;
+			img {
+				width: 100%;
+			} 
+			@media screen and (max-width:1370px) {
+				width: 750px;
+				right: -230px;
+			}
+			@media screen and (max-width:1270px) {
+				width: 700px;
+				right: -200px;
+			}
+			@media screen and (max-width:1160px) {
+				width: 660px;
+				right: -180px;
+			}
+			@media screen and (max-width:1050px) {
+				width: 600px;
+				right: -150px;
+			}
+			@media screen and (max-width:986px) {
+				width: 500px;
+				right: -160px;
+			}
+			@media screen and (max-width:830px) {
+				width: 450px;
+				right: -100px;
+			}
+			@media screen and (max-width:740px) {
+				right: -400px;
+			}
+		}
+	.banner-content-top {
+		h2 {
+			color: #030303;
+			font-size: 89px;
+			font-weight: 400;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+			line-height: 1.1em;
+			font-family: BebasNeue;
+			.little {
+				font-size: 40px;
+			}
+			.middle {
+				font-size: 72px;
+			}
+			@media screen and (max-width:740px) {
+				font-size: 70px;
+				text-align: center;
+				line-height: 1.1em;
+				.little {
+					font-size: 35px;
+				}
+				.middle {
+					font-size: 65px;
+				}
+			}
+		}
+		.sales-red-text {
+			font-family: BebasNeue;
+			color: #fb0101;
+			font-size: 45px;
+			font-weight: 400;
+			margin-bottom: 28px;
+			@media screen and (max-width:740px) {
+				text-align: center;
+			}
+		}
+		.about-code {
+			margin-bottom: 30px;
+			p {
+				color: #020202;
+				font-size: 20px;
+				font-weight: 400;
+				margin-bottom: 15px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				@media screen and (max-width:986px) {
+					font-size: 18px;
+					span {
+						font-size: 30px;
+					}
+				}
+				@media screen and (max-width:740px) {
+					text-align: center;
+				}
+			}
+			span {
+				font-family: BebasNeue;
+				font-size: 37px;
+				font-weight: 700;
+			}
+		}
+		.buttons {
+			.black-btn {
+				margin-right: 35px;
+				@media screen and (max-width:740px) {
+					color: #000;
+					border: 1px solid #000;
+					&:hover {
+						color: #fff;
+    				background-color: #000;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width:1160px) {
+		.banner-content-bottom .cont h1{
+			font-size: 40px;
+		}
+	}
+	@media screen and (max-width:986px) {
+		.banner-content-bottom .cont h1 {
+			max-width: 100%;
+		}
+	}
+}
